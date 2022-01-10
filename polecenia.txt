@@ -1,1 +1,35 @@
 text
+
+2.  touch polecenia.txt
+    git add polecenia.txt
+    git commit -m "pierwsze polecenie" (miało być drugie)
+
+3.  touch lista.txt 
+    echo Lista zakupów > lista.txt
+    git add lista.txt
+    git commit -m "Lista zakupów"
+
+4.  git branch dieta/niezdrowa
+    git checkout dieta/niezdrowa
+    echo pączki >> lista.txt
+    git add lista.txt 
+    git commit -m raz
+    echo faworki >> lista.txt
+    git add lista.txt 
+    git commit -m dwa
+    echo ciastka >> lista.txt
+    git add lista.txt 
+    git commit -m trzy
+
+5.  git branch dieta/zdrowa 
+    git checkout dieta/zdrowa
+    echo szpinak >> lista.txt
+    git add lista.txt
+    git commit -m "zdrowo!"
+
+6.  git checkout dieta/niezdrowa 
+    git merge main
+    git checkout dieta/zdrowa
+    git merge main
+
+7.  git push
